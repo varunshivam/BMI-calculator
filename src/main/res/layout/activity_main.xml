@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|top">
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Users"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:gravity="top"
+        android:layout_marginTop="24dp" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/hint_wt"
+    android:id="@+id/edtweight"
+    android:inputType="number"
+    />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_htf"
+        android:id="@+id/edtHeightFt"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_hti"
+        android:id="@+id/edtHeightIN"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Calculate BMI"
+        android:id="@+id/btncalculate"
+       android:backgroundTint="#7FD121"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+android:id="@+id/txtResult"
+       android:text="Result will be here "
+       android:textSize="21sp"
+       android:textStyle="bold"
+        android:layout_marginTop="11dp"/>
+
+</LinearLayout>
